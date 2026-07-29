@@ -1,9 +1,29 @@
 {
+  "name": "spotify-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"npx nodemon server.js",
+    "start":"node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sprakhar639/Spotify-Clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sprakhar639/Spotify-Clone/issues"
+  },
+  "homepage": "https://github.com/sprakhar639/Spotify-Clone#readme",
   "dependencies": {
     "cookie-parser": "^1.4.7",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
-    "init": "^0.1.2",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.8.1"
   }
