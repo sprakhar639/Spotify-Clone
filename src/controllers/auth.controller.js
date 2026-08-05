@@ -7,7 +7,7 @@ async function registerUser(req,res){
     const{username,email,password,role="user"}=req.body;
 
 
-    
+
     const isUserAlreadyExists=await userModel.findOne({
        $or:[
         {username},
@@ -92,5 +92,9 @@ async function loginUser(req,res){
     })
 }
 
+async function logoutUser(req,res){
+res.clearCookie("token")
+res.status(200).json({message:"user logged out successfully"})
+}
 
-module.exports={ registerUser,loginUser}
+module.exports={ registerUser,loginUser,logoutUser}
