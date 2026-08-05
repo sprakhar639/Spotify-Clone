@@ -51,6 +51,7 @@ async function getAllMusics(req,res){
     res.status(200).json({
         message:"Music fetched successfully",
         musics:musics,
+    
     })
 }
 
